@@ -1,7 +1,8 @@
 require "erb"
 class RackTED
   def call(env)
-Rack::Response.new (render("index.html.erb"))
+      request=Rack::Response.new(env)
+Rack::Response.new(render("index.html.erb"))
   end
   def render(template)
     path=File.expand_path("../views/#{template}",__FILE__)
