@@ -1,6 +1,6 @@
 
 class RackTED
   def call(env)
-Rack::Response.new ("hello")
+Rack::Response.new (render("index.html.erb"))
   end
 end
