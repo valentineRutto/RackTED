@@ -1,0 +1,2 @@
+require "RackTED"
+run(RackTED)
