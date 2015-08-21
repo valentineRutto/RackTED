@@ -2,6 +2,7 @@ require "erb"
 class RackTED
   def call(env)
       request=Rack::Response.new(env)
+      request.path
 Rack::Response.new(render("index.html.erb"))
   end
   def render(template)
