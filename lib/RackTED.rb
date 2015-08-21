@@ -4,7 +4,7 @@ class RackTED
 Rack::Response.new (render("index.html.erb"))
   end
   def render(template)
-    path=File.expand("path/to/file")
+    path=File.expand("../views/#{template}",)
 
   end
 end
