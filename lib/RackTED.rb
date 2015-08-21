@@ -4,7 +4,7 @@ class RackTED
       request=Rack::Response.new(env)
       case request.path
       when"/" then Rack::Response.new(render("index.html.erb"))
-      
+      else Rack::Response.new(render("Not Found",404))
   end
   def render(template)
     path=File.expand_path("../views/#{template}",__FILE__)
