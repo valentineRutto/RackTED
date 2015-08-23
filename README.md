@@ -1,2 +1,2 @@
 # RackTED
-simple  rack application with EMbedded ruby 
+simple  rack application with Embedded ruby 
